@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styleProf.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="welcome"> </h1>
+
+        <ul id="ulsair">
+            <li id="sair" onclick="sair()">Sair</li>
+        </ul>
+    </header>
+
+    <div id="container">
+
+        <div class="notas" id="notas">
+            <img src="../imgs/bloco-de-anotacoes 64.png" alt="" class="icon" onclick="mostrarNotas1()">
+        </div>
+        <p id="notasP">Notas</p>
+
+        <div class="notas" id="adve" onclick="mostrarAdv()">
+            <img src="../imgs/alerta.png" alt="" class="icon">
+        </div>
+        <p id="adveP">Advertencias</p>
+
+        <div class="notas" id="faltas" onclick="mostrarFalta()">
+            <img src="../imgs/marca-x.png" alt="" class="icon">
+        </div>
+        <p id="faltasP">Faltas</p>
+
+        <div class="notas" id="alunos" onclick="mostrarAlunos()">
+            <img src="../imgs/alunos.png" alt="" class="icon">
+        </div>
+        <p id="alunosP">Alunos</p>
+    </div>
+
+
+
+    <div id="quadroAluno">
+        a
+        <div id="mostradorAluno">
+            <div class="div1 campo tema">ALUNOS</div>
+            <div class="adv3 campo" id="campo1">
+                <ul id="ul">
+
+                </ul>
+
+                <div class="x" id="x" onclick="pararDeMostrar()">
+                    x
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quadroNotas">
+        a
+        <div id="editorNotas">
+
+            <div class="div1 tema"><select name="materias" id="materias">
+                <option value="Mat" selected>matematica</option>
+                <option value="Port">portugues</option>
+                <option value="Geo">geografia</option>
+                <option value="Hist">historia</option>
+                <option value="Cie">ciencias</option>
+            </select>
+            <input type="button" value="Atualizar" id="att" onclick="getMateria()">
+            <input type="text" name="alu" id="idaluno" placeholder="ID do aluno">
+        </div>
+            
+
+
+            <div class="div2 campo"><p class="centralizar">1 ETAPA</p> </div>
+            <div class="div3 campo"> <p class="centralizar">2 ETAPA</p>  </div>
+            <div class="div4 campo"><p class="centralizar">3 ETAPA</p>  </div>
+            <div class="div5 tema"><h1 id="notes">Notas</h1>
+                <input type="button" id="enviar_notas" value="Enviar notas" onclick="teste()">
+            </div>
+            <div class="div6 campo" id="nota1"> <input type="number" class="centralizar nota" name="n1" id="n1"></div>
+            <div class="div7 campo" id="nota2"> <input type="number" class="centralizar nota" name="n2" id="n2"></div>
+            <div class="div8 campo" id="nota3"> <input type="number" class="centralizar nota" name="n2" id="n3"></div>
+
+            <div class="x" id="x" onclick="pararDeMostrar()">
+                x
+            </div>
+        </div>
+    </div>
+
+
+    <div id="quadroAdv">
+        a
+        <div id="mostradorAdv">
+            <div class="div1 campo tema">ADVERTENCIAS</div>
+            <input type="button" value="Atualizar" id="attAdv" onclick="attAdv()">
+            <input type="text" name="alu2" id="idaluno2" placeholder="ID do aluno">
+            <textarea name="adv" id="taAdv" cols="30" rows="1"></textarea>
+            <input type="button" value="Enviar" id="EnvAdv" onclick="AddNewAdv()">
+            <div class="x" id="x" onclick="pararDeMostrar()">
+                x
+            </div>
+            <div class="adv3 campo" id="campo11">
+                <ul id="ul2">
+
+                </ul>
+
+                <div class="x" id="x" onclick="pararDeMostrar()">
+                    x
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="quadroFaltas">
+        a
+        <div id="editorFaltas">
+
+            <div class="div1 tema"><select name="materias" id="materiasf">
+                <option value="Mat" selected>matematica</option>
+                <option value="Port">portugues</option>
+                <option value="Geo">geografia</option>
+                <option value="Hist">historia</option>
+                <option value="Cie">ciencias</option>
+            </select>
+            <input type="button" value="Atualizar" id="att" onclick="getMateriaf()">
+            <input type="text" name="alu" id="idalunof" placeholder="ID do aluno">
+        </div>
+            
+
+
+            <div class="div2 campo"><p class="centralizar">1 ETAPA</p> </div>
+            <div class="div3 campo"> <p class="centralizar">2 ETAPA</p>  </div>
+            <div class="div4 campo"><p class="centralizar">3 ETAPA</p>  </div>
+            <div class="div5 tema"><h1 id="falts">Faltas</h1>
+                <input type="button" id="enviar_notas" value="Enviar faltas" onclick="faltas()">
+            </div>
+            <div class="div6 campo" id="nota1"> <input type="number" class="centralizar nota" name="n1" id="f1"></div>
+            <div class="div7 campo" id="nota2"> <input type="number" class="centralizar nota" name="n2" id="f2"></div>
+            <div class="div8 campo" id="nota3"> <input type="number" class="centralizar nota" name="n2" id="f3"></div>
+
+            <div class="x" id="x" onclick="pararDeMostrar()">
+                x
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/scriptProf.js"></script>
+
+</body>
+
+</html>

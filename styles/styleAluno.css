@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    background-color: #00556d;
+    height: 10vh;
+    position: relative;
+}
+
+header h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    
+}
+
+#ulsair{
+    float: right;
+    line-height: 10vh;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+    list-style: none;
+
+}
+
+
+
+#sair{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+li:hover{
+    
+    cursor: pointer;
+    background-color: white;
+    color: #00556d;
+    border-radius: 10px;
+}
+
+#container{
+    position: relative;
+    height: 90vh;
+}
+
+
+#notas{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#adve{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#faltas{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#horario{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+
+.notas{
+    background-color: #026480;
+    padding: 50px;
+    border-radius: 100%;
+    transition-duration: 1s;
+}
+
+.notas:hover{
+    padding: 75px;
+    cursor: pointer;
+}
+
+
+p{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#horarioP{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#notasP{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#adveP{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#faltasP{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#horario2{
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.87);
+    
+}
+#img2{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.x{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.x:hover{
+    cursor: pointer;
+}
+
+#quadroNotas{
+       
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: none;
+}
+
+.mostradorNotas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #026480;
+    padding: 20px;
+    display: grid;
+    grid-template: 2fr repeat(4, 1fr)/ 2fr repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    text-align: center;
+    height: 50vh;
+    width: 80%;
+    box-shadow: 1px 2px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.campo{
+    background-color: white;
+    padding: 8px;
+}
+
+.tema{
+    background-color: burlywood;
+}
+
+
+#quadroAdv{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: none;
+}
+
+#mostradorAdv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #026480;
+    padding: 20px;
+    display: grid;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr repeat(1, 15fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 5px;
+        
+    text-align: center;
+    height: 50vh;
+    width: 80%;
+    box-shadow: 1px 2px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ul{
+    color: black;
+    text-align: center;
+    float: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+li{
+    margin-top: 15px;
+}
+
+#x{
+    background-color: red;
+}
+
+
+.mostradorFaltas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #026480;
+    padding: 20px;
+    display: grid;
+    grid-template: 2fr repeat(5, 1fr)/ 2fr repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    text-align: center;
+    height: 50vh;
+    width: 80%;
+    box-shadow: 1px 2px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#quadroFaltas{
+       
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: none;
+}
+
+
+

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    position: relative;
+}
+
+
+
+
+#container{
+    background-color: #002E3B;
+    width: 40%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    display: inline-block
+}
+
+#container h1{
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    padding-top: 20px;
+    color: white;
+    
+}
+
+#inpEmail{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#inpPsswd{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+
+    margin-top: 100px;
+}
+
+#container p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-size: 20px;
+    
+}
+
+#inpLog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 200px;
+}
+
+#inpLog:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.356);
+}
+
+#imgs{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #00556d;
+}
+
+#img1{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

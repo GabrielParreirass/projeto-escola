@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do aluno</title>
+    <link rel="stylesheet" href="../styles/styleAluno.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="welcome"> </h1>
+
+        <ul id="ulsair">
+            <li id="sair" onclick="sair()">Sair</li>
+        </ul>
+    </header>
+
+
+    <div id="container">
+
+        <div class="notas" id="notas">
+            <img src="../imgs/bloco-de-anotacoes 64.png" alt="" class="icon" onclick="mostrarNotas()">
+        </div>
+        <p id="notasP">Notas</p>
+
+
+        <div class="notas" id="adve" onclick="mostrarAdv()">
+            <img src="../imgs/alerta.png" alt="" class="icon">
+        </div>
+        <p id="adveP">Advertencias</p>
+
+        <div class="notas" id="faltas" onclick="mostrarFaltas()">
+            <img src="../imgs/marca-x.png" alt="" class="icon">
+        </div>
+        <p id="faltasP">Faltas</p>
+
+        <div class="notas" id="horario" onclick="mostrar()">
+            <img src="../imgs/horarios.png" alt="" class="icon">
+        </div>
+        <p id="horarioP">Horarios</p>
+
+
+
+        <div id="horario2">
+            <img src="../imgs/hrescola.jpeg" alt="" id="img2">
+
+            <div class="x" onclick="pararDeMostrar()">
+                X
+            </div>
+        </div>
+
+
+        <div id="quadroNotas">
+            <div id="mostradorNotas" class="mostradorNotas">
+
+                <h3 class="disciplina">Disciplina</h3>
+                <h4 class="b1">1º Etapa</h4>
+                <h4 class="b2">2º Etapa</h4>
+                <h4 class="b3">3º Etapa</h4>
+                <h4 class="media">Média</h4>
+
+                <div id="campoDisciplina" class="campo">Matemática</div>
+                <div id="e1MatNota" class="campo"></div>
+                <div id="e2MatNota" class="campo"></div>
+                <div id="e3MatNota" class="campo"></div>
+
+                <div id="matMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">Português</div>
+                <div id="e1PortNota" class="campo"></div>
+                <div id="e2PortNota" class="campo"></div>
+                <div id="e3PortNota" class="campo"></div>
+
+                <div id="portMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">Ciências</div>
+                <div id="e1CienNota" class="campo"></div>
+                <div id="e2CienNota" class="campo"></div>
+                <div id="e3CienNota" class="campo"></div>
+
+                <div id="cienMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">Geografia</div>
+                <div id="e1GeoNota" class="campo"></div>
+                <div id="e2GeoNota" class="campo"></div>
+                <div id="e3GeoNota" class="campo"></div>
+
+                <div id="geoMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">História</div>
+                <div id="e1HistNota" class="campo"></div>
+                <div id="e2HistNota" class="campo"></div>
+                <div id="e3HistNota" class="campo"></div>
+
+                <div id="histMedia" class="campo"></div>
+
+                <div class="x" onclick="pararDeMostrar()">
+                    X
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="quadroAdv">
+            a
+            <div id="mostradorAdv">
+                <div class="div1 campo tema">ADVERTENCIAS</div>
+                <div class="adv3 campo" id="campo1">
+                    <ul id="ul">
+
+                    </ul>
+
+                    <div class="x" id="x" onclick="pararDeMostrar()">
+                        X
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="quadroFaltas">
+            <div id="mostradorFaltas" class="mostradorFaltas">
+
+                <h3 class="disciplina">Disciplina</h3>
+                <h4 class="fb1">1º Etapa</h4>
+                <h4 class="fb2">2º Etapa</h4>
+                <h4 class="fb3">3º Etapa</h4>
+                <h4 class="media">Total</h4>
+
+                <div id="campoDisciplina" class="campo">Matemática</div>
+                <div id="fe1MatNota" class="campo"></div>
+                <div id="fe2MatNota" class="campo"></div>
+                <div id="fe3MatNota" class="campo"></div>
+
+                <div id="fmatMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">Português</div>
+                <div id="fe1PortNota" class="campo"></div>
+                <div id="fe2PortNota" class="campo"></div>
+                <div id="fe3PortNota" class="campo"></div>
+
+                <div id="fportMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">Ciências</div>
+                <div id="fe1CienNota" class="campo"></div>
+                <div id="fe2CienNota" class="campo"></div>
+                <div id="fe3CienNota" class="campo"></div>
+
+                <div id="fcienMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">Geografia</div>
+                <div id="fe1GeoNota" class="campo"></div>
+                <div id="fe2GeoNota" class="campo"></div>
+                <div id="fe3GeoNota" class="campo"></div>
+
+                <div id="fgeoMedia" class="campo"></div>
+
+                <div id="campoDisciplina" class="campo">História</div>
+                <div id="fe1HistNota" class="campo"></div>
+                <div id="fe2HistNota" class="campo"></div>
+                <div id="fe3HistNota" class="campo"></div>
+
+                <div id="fhistMedia" class="campo"></div>
+
+                <div class="x" onclick="pararDeMostrar()">
+                    X
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/scriptAluno.js"></script>
+</body>
+
+</html>
